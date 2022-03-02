@@ -10,13 +10,24 @@ body {
   font-family: "Lucida Console", Monaco, monospace;
 }
 
+#my-selected-photo {
+  display: none;
+}
+
+.my-gallery {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+
 .my-photos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
 }
-div > img {
-  border: solid white 0.1rem;
+
+.my-photo {
+  border: 0.1rem solid white;
   border-radius: 0.7rem;
   margin: 0.5rem;
 }
